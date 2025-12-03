@@ -20,7 +20,7 @@
                     @endphp
 
                     @if ($person->photo && Storage::disk('photos')->exists($photoPath))
-                        <img src="{{ Storage::disk('photos')->url($photoPath) }}" class="w-full rounded-sm shadow-lg dark:shadow-black/30" alt="{{ $person->id }}" />
+                        <img src="{{ asset('storage/photos/' . $photoPath) }}" class="w-full rounded-sm shadow-lg dark:shadow-black/30" alt="{{ $person->id }}" />
                     @else
                         <x-svg.person-no-image class="w-full rounded-sm shadow-lg dark:shadow-black/30 fill-neutral-400" alt="no-image-found" />
                     @endif

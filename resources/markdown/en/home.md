@@ -1,6 +1,6 @@
 ## Welcome ...
 
-**Genealogy** is a free and open-source family tree application to record family members and their relationships.
+**Shrestha Bansawali** is a free and open-source family tree application to record family members and their relationships.
 
 <img src="img/help/genealogy-000a.webp" class="rounded" alt="Genealogy-000a">
 <img src="img/help/genealogy-020a.webp" class="rounded" alt="Genealogy-020a">

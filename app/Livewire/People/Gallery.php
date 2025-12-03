@@ -58,10 +58,10 @@ final class Gallery extends Component
 
                 return [
                     'filename' => $filenameWithoutExt, // Store filename without extension for database comparison
-                    'small'    => Storage::disk('photos')->exists($smallFile) ? Storage::disk('photos')->url($smallFile) : null,
-                    'medium'   => Storage::disk('photos')->exists($mediumFile) ? Storage::disk('photos')->url($mediumFile) : null,
-                    'large'    => Storage::disk('photos')->exists($largeFile) ? Storage::disk('photos')->url($largeFile) : null,
-                    'original' => Storage::disk('photos')->url($originalFile),
+                    'small'    => Storage::disk('photos')->exists($smallFile) ? asset('storage/photos/' . $smallFile) : null,
+                    'medium'   => Storage::disk('photos')->exists($mediumFile) ? asset('storage/photos/' . $mediumFile) : null,
+                    'large'    => Storage::disk('photos')->exists($largeFile) ? asset('storage/photos/' . $largeFile) : null,
+                    'original' => asset('storage/photos/' . $originalFile),
                 ];
             })
             ->sortBy('filename')
